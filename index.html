@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weatherforecast</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prévisions Météo</h1>
+        <form action="" method="get" id="cityform">
+            <input type="text" name="city" id="city">
+            <select name="dayDuration" id="dayDuration">
+                <option value="daytime">Choississez la durée</option>
+                <option value="1">1 jour</option>
+                <option value="3">3 jours</option>
+                <option value="5">5 jours</option>
+            </select>
+            <button type="submit" id="submit">Soumettre</button>
+        </form>
+
+        <p id="town"></p>
+        <div class="subContainer">
+
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
