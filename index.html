@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="big-container">
+        <div class="container">
         <h1>Prévisions Météo</h1>
         <form action="" method="get" id="cityform">
-            <input type="text" name="city" id="city">
-            <select name="dayDuration" id="dayDuration">
-                <option value="daytime">Choississez la durée</option>
-                <option value="1">1 jour</option>
+            <input type="text" name="city" id="city" required/>
+            <select name="dayDuration" id="dayDuration" required>
+                <option value="1" selected>1 jour</option>
                 <option value="3">3 jours</option>
                 <option value="5">5 jours</option>
             </select>
@@ -28,6 +28,8 @@
 
         </div>
     </div>
+    </div>
+    
 </body>
 <script src="./script.js"></script>
 

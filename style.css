@@ -1,15 +1,15 @@
 body {
     height: 100vh;
-    background: rgb(251, 246, 63);
-    background: linear-gradient(127deg, rgba(251, 246, 63, 1) 0%, rgba(251, 214, 63, 1) 22%, rgba(146, 225, 139, 1) 42%, rgba(70, 252, 229, 1) 63%, rgba(70, 226, 241, 1) 83%, rgba(70, 138, 252, 1) 100%);
+    background: rgb(251,246,63);
+    background: linear-gradient(127deg, rgba(251,246,63,1) 0%, rgba(251,214,63,1) 25%, rgba(131,231,178,1) 50%, rgba(70,226,241,1) 70%, rgba(70,138,252,1) 100%);
 
-    /* background: rgb(251, 126, 63);
-    background: linear-gradient(288deg, rgba(251, 126, 63, 1) 0%, rgba(251, 63, 108, 1) 22%, rgba(225, 139, 222, 1) 42%, rgba(70, 113, 252, 1) 63%, rgba(70, 99, 241, 1) 83%, rgba(146, 70, 252, 1) 100%); */
-
+    /*background: rgb(251,126,63);
+background: linear-gradient(127deg, rgba(251,126,63,1) 0%, rgba(251,63,108,1) 17%, rgba(152,58,148,1) 42%, rgba(44,33,198,1) 66%, rgba(6,24,82,1) 100%); 
+*/
 }
 
 h1 {
-    color: white;
+    color: #1F9BA6;
     font: 36px Arial, Helvetica, sans-serif;
     margin: 50px 10px;
     text-decoration-line: underline;
@@ -25,18 +25,27 @@ p {
 }
 
 p {
-    color: #fff;
+    color: #1F9BA6;
     font: italic 600 28px Arial, Helvetica, sans-serif;
     display: none;
     margin: 25px auto;
 }
 
-.container {
+.big-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #fcfcfca1;
+    border-radius: 20px;
+    padding: 2.5rem;
 }
 
 .subContainer {
@@ -46,7 +55,7 @@ p {
 
 .subContainer p {
     font: italic 600 20px Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #1F9BA6;
     text-align: center;
     text-transform: capitalize;
 }
@@ -63,7 +72,7 @@ input,
 
 input {
     width: 250px;
-    border: 1px solid #fff;
+    border: 1px solid #1F9BA6;
     color: #1F9BA6;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -71,16 +80,16 @@ input {
 
 #city {
     font: italic 16px Arial, sans-serif;
-    width: 300px;
-    height: 46px;
+    width: 15rem;
+    height: 3rem;
 }
 
 #dayDuration {
     background-color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #1F9BA6;
     color: #1F9BA6;
-    width: 200px;
-    height: 50px;
+    width: 10rem;
+    height: 3.2rem;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-right: 15px;
@@ -103,10 +112,24 @@ input {
     height: 100%;
 }
 
+#degree{
+    font: italic 18px Arial, sans-serif;
+    color: #1F9BA6;
+    height: 10px;
+}
+
 
 @media screen and (max-width: 700px) {
+    body{
+        height: 50%;
+    }
+    
     form {
         flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
     }
 
     #city,
