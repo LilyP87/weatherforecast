@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prévisions Météo - Weatherforecast</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Prévisions Météo</h1>
+
+    <form id="cityform">
+      <label for="city">Ville :</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="Entrez une ville"
+        required
+      />
+
+      <label for="dayDuration">Nombre de jours :</label>
+      <select id="dayDuration" name="dayDuration">
+        <option value="1" selected>1 jour</option>
+        <option value="2">2 jours</option>
+        <option value="3">3 jours</option>
+        <option value="4">4 jours</option>
+        <option value="5">5 jours</option>
+      </select>
+
+      <button id="submit" type="submit">Obtenir la météo</button>
+    </form>
+
+    <div id="errorMessage"></div>
+
+    <div id="town"></div>
+
+    <div class="subContainer"></div>
+
+    <script src="./script.js"></script>
+    <!-- mets ici ton fichier JS ou intègre directement le script dans une balise <script> -->
+  </body>
+</html>
