@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prévisions Météo - Weatherforecast</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Prévisions Météo</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Weatherforecast</title>
-</head>
+    <form id="cityform">
+      <label for="city">Ville :</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="Entrez une ville"
+        required
+      />
 
-<body>
-    <div class="big-container">
-        <div class="container">
-        <h1>Prévisions Météo</h1>
-        <form action="" method="get" id="cityform">
-            <input type="text" name="city" id="city" required/>
-            <select name="dayDuration" id="dayDuration" required>
-                <option value="1" selected>1 jour</option>
-                <option value="3">3 jours</option>
-                <option value="5">5 jours</option>
-            </select>
-            <button type="submit" id="submit">Soumettre</button>
-        </form>
+      <label for="dayDuration">Nombre de jours :</label>
+      <select id="dayDuration" name="dayDuration">
+        <option value="1" selected>1 jour</option>
+        <option value="2">2 jours</option>
+        <option value="3">3 jours</option>
+        <option value="4">4 jours</option>
+        <option value="5">5 jours</option>
+      </select>
 
-        <p id="town"></p>
-        <div class="subContainer">
+      <button id="submit" type="submit">Obtenir la météo</button>
+    </form>
 
-        </div>
-    </div>
-    </div>
-    
-</body>
-<script src="./script.js"></script>
+    <div id="errorMessage"></div>
 
+    <div id="town"></div>
+
+    <div class="subContainer"></div>
+
+    <script src="./script.js"></script>
+    <!-- mets ici ton fichier JS ou intègre directement le script dans une balise <script> -->
+  </body>
 </html>
